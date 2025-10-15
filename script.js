@@ -12,7 +12,7 @@ addBtn.addEventListener('click', function () {
   const category = categorySelect.value
   const amount = Number(amountInput.value)
   const date = dateInput.value
-
+  console.log(category, amount, date)
   if (category === '') {
     alert('please select a category')
     return
