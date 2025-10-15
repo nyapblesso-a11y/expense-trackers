@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #b9b7b7;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.input-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.input-sec label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input-sec input[type="number"],
+.input-sec input[type="date"] {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.input-sec button {
+  padding: 8px 12px;
+  background-color: #272927;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expense-list {
+  margin: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  background-color: #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #474947;
+  color: #fff;
+}
+
+tfoot,
+td {
+  font-weight: bold;
+}
+
+#category-select {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
