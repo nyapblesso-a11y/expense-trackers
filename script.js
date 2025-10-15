@@ -77,5 +77,5 @@ for (const expense of expenses) {
   categoryCel.textContent = expense.category
   amountCel.textContent = expense.amount
   dateCel.textContent = expense.date
-  deleteCel.appendChild(deleteBt)  
+  deleteCel.appendChild(deleteBt)
 }
