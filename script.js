@@ -12,7 +12,6 @@ addBtn.addEventListener('click', function () {
   const category = categorySelect.value
   const amount = Number(amountInput.value)
   const date = dateInput.value
-  console.log(category, amount, date)
   if (category === '') {
     alert('please select a category')
     return
@@ -57,7 +56,6 @@ addBtn.addEventListener('click', function () {
 })
 
 for (const expense of expenses) {
-  expenses.push({ category, amount, date })
   totalAmount += expense.amount
   totalAmountCell.textContent = totalAmount
 
