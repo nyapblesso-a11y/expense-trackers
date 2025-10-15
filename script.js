@@ -42,12 +42,11 @@ addBtn.addEventListener('click', function () {
   deleteBnt.textContent = 'Delete'
   deleteBnt.classList.add('delete-btn')
   deleteBnt.addEventListener('click', function () {
-      expenses.splice(expenses.indexOf(expense), 1)
+    expenses.splice(expenses.indexOf(expense), 1)
+    totalAmount -= expense.amount
+    totalAmountCell.textContent = totalAmount
 
-      totalAmount -= expense.amount
-      totalAmountCell.textContent = totalAmount
-
-      expenseTableBody.removeChild(newRow)
+    expenseTableBody.removeChild(newRow)
   })
 
   const expense = expenses[expenses.length - 1]
@@ -55,7 +54,6 @@ addBtn.addEventListener('click', function () {
   amountCell.textContent = expense.amount
   dateCell.textContent = expense.date
   deleteCell.appendChild(deleteBnt)
-  
 })
 
 for (const expense of expenses) {
@@ -72,12 +70,10 @@ for (const expense of expenses) {
   deleteBt.textContent = 'Delete'
   deleteBt.classList.add('delete-btn')
   deleteBt.addEventListener('click', function () {
-      expenses.splice(expenses.indexOf(expense), 1)
-
-      totalAmount -= expense.amount
-      totalAmountCell.textContent = totalAmount
-
-      expenseTableBody.removeChild(newRow)
+    expenses.splice(expenses.indexOf(expense), 1)
+    totalAmount -= expense.amount
+    totalAmountCell.textContent = totalAmount
+    expenseTableBody.removeChild(newRow)
   })
 
   categoryCel.textContent = expense.category
